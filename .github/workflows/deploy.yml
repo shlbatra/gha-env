@@ -7,6 +7,7 @@ on:
 env:
   MONGO_DB_NAME: gha-demo
 jobs:
+  environment: testing
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.sh42fj0.mongodb.net   
