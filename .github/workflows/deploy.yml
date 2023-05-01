@@ -5,7 +5,7 @@ on:
       - main
       - dev
 env:
-  MONGODB_DB_NAME: gha-demo
+  MONGO_DB_NAME: gha-demo
 jobs:
   test:
     env:
@@ -36,5 +36,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output information
-        run: |        
-          echo "MONGO_DB_NAME: $MONGO_DB_NAME"
+        run: echo "MONGO_DB_NAME: $MONGO_DB_NAME"
